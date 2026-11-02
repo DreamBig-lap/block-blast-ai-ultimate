@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+*.obj
+*.o
+*.lib
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and runtime outputs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Ephemeral debug captures and failure dumps
+# (Keep test fixtures like 20261101_205205, ignore run-time dumps)
+debug/perception_failures/*
+!debug/perception_failures/20261101_205205/
+debug/live_audit/
+debug/phase_3_5_5/
+debug/phase_3_5_9/
+debug/phase_4_1_preflight/
+debug/phase_4_2_2_tracker_validation/
+*.tmp
+
+# Debug artifacts
+/debug/
+
+# Research files not reviewed for release
+/research/
+
+# Internal development reports
+/docs/reports/
+
+# Temporary files
+*.tmp

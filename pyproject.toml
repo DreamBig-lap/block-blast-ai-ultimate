@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "block-blast-ai"
+version = "1.0.0"
+description = "High-performance autonomous AI & real-time computer vision system for Block Blast on Android"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Block Blast AI Contributors" }
+]
+keywords = [
+    "block-blast",
+    "ai",
+    "computer-vision",
+    "bitboard",
+    "beam-search",
+    "android",
+    "adb",
+    "game-bot",
+    "automation"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Games/Entertainment :: Puzzle Games"
+]
+dependencies = [
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+]
+
+[project.scripts]
+block-blast-ai = "run_autonomous_game:main"
+block-blast-cli = "cli_demo:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["action_engine*", "ai_engine*", "benchmarks*", "computer_vision*", "game_engine*"]
